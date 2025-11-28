@@ -40,7 +40,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         label = "NEW_BEHAVIOR";
         #sensor-binding-cells = <0>;
-        bindings = <&msc MOVE_X(-20)>, <&msc MOVE_X(20)>;
+        bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
     };
 
     behaviors {
@@ -60,14 +60,14 @@
 
         layer0 {
             bindings = <
-&kp TILDE   &kp N1        &kp N2        &kp N3  &kp N4                &kp N5       &kp UP_ARROW     &kp N6     &kp N7                &kp N8     &kp N9         &kp N0         &kp BACKSLASH
+&kp TILDE2  &kp N1        &kp N2        &kp N3  &kp N4                &kp N5       &kp UP_ARROW     &kp N6     &kp N7                &kp N8     &kp N9         &kp N0         &kp BACKSLASH
 &kp ESCAPE  &kp Q         &kp W         &kp E   &kp R                 &kp T        &kp DOWN_ARROW   &kp Y      &kp U                 &kp I      &kp O          &kp P          &kp BACKSPACE
 &kp TAB     &kp A         &kp S         &kp D   &kp F                 &kp G        &kp LEFT_ARROW   &kp H      &kp J                 &kp K      &kp L          &kp SEMI       &kp APOS
 &kp LSHFT   &kp Z         &kp X         &kp C   &kp V                 &kp B        &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA  &kp DOT        &kp FSLH       &kp MINUS
 &kp C_MUTE  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1   &mt LCTRL LANGUAGE_2  &kp ENTER    &kp ENTER        &kp SPACE  &mt RCTRL LANGUAGE_1  &mo 2      &kp RIGHT_ALT  &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER0";
         };
 
