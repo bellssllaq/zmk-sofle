@@ -67,7 +67,7 @@
 &kp C_MUTE  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1   &mt LCTRL LANGUAGE_2  &kp ENTER    &kp ENTER        &kp SPACE  &mt RCTRL LANGUAGE_1  &mo 2      &kp RIGHT_ALT  &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER0";
         };
 
@@ -75,7 +75,7 @@
             bindings = <
 &kp F1      &kp F2  &kp F3  &kp F4       &kp F5        &kp F6           &mmv MOVE_UP     &kp F7     &kp F8         &kp F9          &kp F10     &kp F11           &kp F12
 &trans      &trans  &trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp PG_UP  &mkp MB1       &mkp MB3        &mkp MB2    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans  &kp LEFT     &kp DOWN      &kp RIGHT        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT       &kp UP_ARROW    &kp RIGHT   &kp TILDE         &trans
+&trans      &trans  &trans  &kp LEFT     &kp DOWN      &kp RIGHT        &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT       &kp UP_ARROW    &kp RIGHT   &kp GRAVE         &trans
 &trans      &trans  &trans  &trans       &trans        &trans           &mmv MOVE_RIGHT  &trans     &kp BACKSPACE  &kp DOWN_ARROW  &kp DELETE  &kp EQUAL         &kp MINUS
 &kp C_MUTE  &trans  &trans  &trans       &trans        &trans           &mkp LCLK        &trans     &trans         &trans          &trans      &trans
             >;
