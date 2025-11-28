@@ -36,11 +36,13 @@
         tap-ms = <100>;
     };
 
-    new_behavior: new_behavior {
+    scroll_encoder_hor: scroll_encoder_hor {
         compatible = "zmk,behavior-sensor-rotate";
-        label = "NEW_BEHAVIOR";
+        label = "SCROLL_ENCODER_HOR";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+        tap-ms = <100>;
     };
 
     behaviors {
@@ -81,7 +83,7 @@
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&new_behavior>;
+            sensor-bindings = <&scroll_encoder_hor>;
         };
 
         layer_2 {
