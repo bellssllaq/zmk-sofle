@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '`', s: '~'}
+  - '"'
   - Q
   - W
   - E
@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '''', s: '"'}
+  - {t: '[', s: '{'}
   - A
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: '-', s: _}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: ;, s: ':'}
+  - '!'
   - Z
   - X
   - C
