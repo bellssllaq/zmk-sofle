@@ -126,11 +126,11 @@
 
         layer_1 {
             bindings = <
-&kp F1           &kp F2       &kp F3          &kp F4          &kp F5           &kp F6    &mmv MOVE_UP     &kp F7    &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
-&trans           &kp LS(TAB)  &kp HOME        &kp UP_ARROW    &kp PAGE_UP      &none     &mmv MOVE_DOWN   &mkp MB5  &mkp MB1        &msc SCRL_UP    &mkp MB2         &none    &none
-&kp LG(TAB)      &kp TAB      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &mmv MOVE_LEFT   &mkp MB4  &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &none    &none
-&kp LC(LS(TAB))  &kp LC(TAB)  &kp END         &none           &kp PAGE_DOWN    &none     &mmv MOVE_RIGHT  &kp HOME  &kp BACKSPACE   &msc SCRL_DOWN  &kp DELETE       &none    &kp MINUS
-&kp C_MUTE       &trans       &trans          &trans          &trans           &trans    &mkp LCLK        &trans    &trans          &trans          &trans           &trans
+&kp F1           &kp F2       &kp F3          &kp F4          &kp F5           &kp F6    &mmv MOVE_UP     &kp F7         &kp F8             &kp F9           &kp F10          &kp F11  &kp F12
+&none            &kp LS(TAB)  &kp HOME        &kp UP_ARROW    &kp PAGE_UP      &none     &mmv MOVE_DOWN   &mkp MB5       &mkp MB1           &msc SCRL_UP     &mkp MB2         &none    &none
+&kp LG(TAB)      &kp TAB      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &mmv MOVE_LEFT   &mkp MB4       &msc SCRL_LEFT     &mkp MCLK        &msc SCRL_RIGHT  &none    &none
+&kp LC(LS(TAB))  &kp LC(TAB)  &kp END         &none           &kp PAGE_DOWN    &none     &mmv MOVE_RIGHT  &kp HOME       &kp BACKSPACE      &msc SCRL_DOWN   &kp DELETE       &none    &kp MINUS
+&kp C_MUTE       &trans       &trans          &trans          &trans           &trans    &mkp LCLK        &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &none            &none
             >;
 
             display-name = "layer1";
