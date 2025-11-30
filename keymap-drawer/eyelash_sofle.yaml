@@ -84,7 +84,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - PgUp
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
   - '&mkp MB1'
@@ -95,9 +95,9 @@ layers:
   - Gui+$$mdi:keyboard-tab$$
   - $$mdi:keyboard-tab$$
   - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB4'
   - $$mdi:pan-left$$
@@ -108,14 +108,14 @@ layers:
   - Ctl+Sft+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-down-bold$$
   - PgDn
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-down$$
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
