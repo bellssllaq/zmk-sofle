@@ -187,6 +187,13 @@
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "MACRO_INSERT_PARENT";
         };
+
+        macro_insert_angle: macro_insert_angle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            label = "MACRO_INSERT_ANGLE";
+        };
     };
 
     keymap {
