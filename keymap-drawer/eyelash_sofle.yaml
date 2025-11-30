@@ -134,16 +134,16 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '`', s: '~'}
-  - '"'
+  - '&t_d_d_wquote'
   - {t: '''', s: '"'}
   - '#'
   - $$mdi:arrow-up-bold$$
-  - (
-  - '{'
-  - <
-  - {t: '[', s: '{'}
-  - F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&t_d_d_par'
+  - '&t_d_d_brace'
+  - '&t_d_d_angle'
+  - '&t_d_d_bracket'
+  - '*'
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - '?'
@@ -155,8 +155,8 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - _
   - +
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '@'
   - '~'
   - {t: '-', s: _}
@@ -168,8 +168,8 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '-', s: _}
+  - RETURN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
   - {t: \, s: '|'}
@@ -181,8 +181,8 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
