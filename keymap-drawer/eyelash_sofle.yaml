@@ -328,3 +328,19 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
+- p: [32, 37]
+  k: '&mmv MOVE_X(-200)'
+- p: [45, 37]
+  k: '&mmv MOVE_X(200)'
+- p: [6, 37]
+  k: '&mmv MOVE_Y(200)'
+- p: [19, 37]
+  k: '&mmv MOVE_Y(-200)'
+- p: [19, 50]
+  k: '&mmv MOVE_Y(-100)'
+- p: [6, 50]
+  k: '&mmv MOVE_Y(100)'
+- p: [45, 50]
+  k: '&mmv MOVE_X(100)'
+- p: [32, 50]
+  k: '&mmv MOVE_X(-100)'
