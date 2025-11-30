@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - {t: '`', s: '~'}
+  - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -13,8 +13,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: \, s: '|'}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '`', s: '~'}
   - Q
   - W
   - E
@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - {t: '''', s: '"'}
   - A
   - S
   - D
@@ -38,9 +38,9 @@ layers:
   - J
   - K
   - L
+  - {t: '-', s: _}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -52,10 +52,10 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '-', s: _}
+  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - LEFT WIN
-  - $$mdi:apple-keyboard-option$$
+  - '&t_d_h_alt_shiftL'
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - '&t_d_h_enter'
   - '&t_d_h_layerL'
@@ -63,7 +63,7 @@ layers:
   - '&t_d_h_layerR'
   - '&t_d_h_space'
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
-  - $$mdi:apple-keyboard-option$$
+  - '&t_d_h_alt_shiftR'
   - {t: '$$mdi:backspace$$', type: backspace}
   layer1:
   - F1
