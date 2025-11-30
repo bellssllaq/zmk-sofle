@@ -73,6 +73,20 @@
         bindings = <&lt 2 LANGUAGE_1>, <&mt RCTRL ENTER>;
     };
 
+    t_d_h_alt_shiftL: t_d_h_alt_shiftL {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_ALT_SHIFTL";
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_ALT>, <&kp LEFT_SHIFT>;
+    };
+
+    t_d_h_alt_shiftR: t_d_h_alt_shiftR {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_ALT_SHIFTR";
+        #binding-cells = <0>;
+        bindings = <&kp RA(RIGHT_ALT)>, <&kp RIGHT_SHIFT>;
+    };
+
     behaviors {
     };
 
@@ -90,11 +104,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE   &kp N1        &kp N2        &kp N3  &kp N4                &kp N5       &kp UP_ARROW     &kp N6     &kp N7                &kp N8     &kp N9         &kp N0         &kp BACKSLASH
-&kp ESCAPE  &kp Q         &kp W         &kp E   &kp R                 &kp T        &kp DOWN_ARROW   &kp Y      &kp U                 &kp I      &kp O          &kp P          &kp BACKSPACE
-&kp TAB     &kp A         &kp S         &kp D   &kp F                 &kp G        &kp LEFT_ARROW   &kp H      &kp J                 &kp K      &kp L          &kp SEMI       &kp APOS
-&kp LSHFT   &kp Z         &kp X         &kp C   &kp V                 &kp B        &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA  &kp DOT        &kp FSLH       &kp MINUS
-&kp C_MUTE  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1   &mt LCTRL LANGUAGE_2  &kp ENTER    &kp ENTER        &kp SPACE  &mt RCTRL LANGUAGE_1  &mo 2      &kp RIGHT_ALT  &kp BACKSPACE
+&kp GRAVE   &kp N1        &kp N2        &kp N3         &kp N4        &kp N5           &kp UP_ARROW     &kp N6         &kp N7        &kp N8         &kp N9         &kp N0         &kp BACKSLASH
+&kp ESCAPE  &kp Q         &kp W         &kp E          &kp R         &kp T            &kp DOWN_ARROW   &kp Y          &kp U         &kp I          &kp O          &kp P          &kp BACKSPACE
+&kp TAB     &kp A         &kp S         &kp D          &kp F         &kp G            &kp LEFT_ARROW   &kp H          &kp J         &kp K          &kp L          &kp SEMI       &kp APOS
+&kp LSHFT   &kp Z         &kp X         &kp C          &kp V         &kp B            &kp RIGHT_ARROW  &kp N          &kp M         &kp COMMA      &kp DOT        &kp FSLH       &kp MINUS
+&kp C_MUTE  &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL TAB  &t_d_h_enter  &t_d_h_layerL    &kp ENTER        &t_d_h_layerR  &t_d_h_space  &mt RCTRL TAB  &kp RIGHT_ALT  &kp BACKSPACE
             >;
 
             sensor-bindings = <&scroll_encoder>;
