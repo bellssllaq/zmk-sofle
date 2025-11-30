@@ -232,13 +232,6 @@
     };
 
     macros {
-        shift_tab: shift_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "SHIFT_TAB";
-        };
-
         macro_insert_wquote: macro_wq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
