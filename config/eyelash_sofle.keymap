@@ -45,6 +45,20 @@
         tap-ms = <100>;
     };
 
+    t_d_h_enter: t_d_h_enter {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_ENTER";
+        #binding-cells = <0>;
+        bindings = <&kp RETURN>, <&mt LC(LCTRL) BACKSPACE>;
+    };
+
+    t_d_h_space: t_d_h_space {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_SPACE";
+        #binding-cells = <0>;
+        bindings = <&kp SPACE>, <&mt RCTRL BACKSPACE>;
+    };
+
     behaviors {
     };
 
