@@ -241,6 +241,13 @@
             bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
             label = "MACRO_INSERT_ANGLE";
         };
+
+        macro_insert_grave: macro_insert_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp LEFT_ARROW>;
+            label = "MACRO_INSERT_GRAVE";
+        };
     };
 
     keymap {
