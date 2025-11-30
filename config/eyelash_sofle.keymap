@@ -59,6 +59,20 @@
         bindings = <&kp SPACE>, <&mt RCTRL BACKSPACE>;
     };
 
+    t_d_h_layerL: t_d_h_layerL {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_LAYERL";
+        #binding-cells = <0>;
+        bindings = <&lt 1 LANGUAGE_2>, <&mt LCTRL SPACE>;
+    };
+
+    t_d_h_layerR: t_d_h_layerR {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_LAYERR";
+        #binding-cells = <0>;
+        bindings = <&lt 2 LANGUAGE_1>, <&mt RCTRL ENTER>;
+    };
+
     behaviors {
     };
 
