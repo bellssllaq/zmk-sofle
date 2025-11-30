@@ -40,7 +40,7 @@ layers:
   - L
   - {t: '-', s: _}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '!'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - '~'
-  - {t: \, s: '|'}
+  - {t: /, s: '?'}
   - $$mdi:volume-off$$
   - LEFT WIN
   - '&t_d_h_alt_shiftL'
