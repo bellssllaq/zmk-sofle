@@ -352,3 +352,15 @@ combos:
 - p: [32, 50]
   k: '&mmv MOVE_X(-100)'
   l: [layer1]
+- p: [7, 8]
+  k: '&macro_insert_par'
+  l: [layer2]
+- p: [8, 9]
+  k: '&macro_insert_brace'
+  l: [layer2]
+- p: [9, 10]
+  k: '&macro_insert_bracket'
+  l: [layer2]
+- p: [10, 11]
+  k: '&macro_insert_angle'
+  l: [layer2]
