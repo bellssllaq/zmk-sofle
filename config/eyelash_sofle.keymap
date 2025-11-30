@@ -274,11 +274,11 @@
 
         layer_2 {
             bindings = <
-&kp ESC      &none            &kp GRAVE      &kp DOUBLE_QUOTES  &kp SQT    &kp HASH         &kp UP_ARROW     &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &kp F10        &none
-&none        &kp EXCLAMATION  &kp QUESTION   &kp STAR           &kp CARET  &kp DOLLAR       &kp DOWN_ARROW   &kp COMMA             &kp N7          &kp N8         &kp N9            &kp UNDER      &kp PLUS
-&kp AT_SIGN  &kp TILDE        &kp MINUS      &kp EQUAL          &kp PLUS   &kp AMPERSAND    &kp LEFT_ARROW   &kp N0                &kp N4          &kp N5         &kp N6            &kp BACKSPACE  &kp DELETE
-&none        &kp UNDER        &kp BACKSLASH  &kp PIPE           &kp SLASH  &kp PERCENT      &kp RIGHT_ARROW  &kp DOT               &kp N1          &kp N2         &kp N3            &bootloader    &none
-&none        &none            &none          &none              &none      &none            &mkp LCLK        &none                 &none           &none          &none             &none
+&kp ESC      &none            &kp GRAVE      &t_d_d_wquote  &kp SQT    &kp HASH         &kp UP_ARROW     &t_d_d_par  &t_d_d_brace  &t_d_d_angle  &t_d_d_bracket  &kp ASTRK  &kp DELETE
+&none        &kp EXCLAMATION  &kp QUESTION   &kp STAR       &kp CARET  &kp DOLLAR       &kp DOWN_ARROW   &kp COMMA   &kp N7        &kp N8        &kp N9          &kp PLUS   &kp BACKSPACE
+&kp AT_SIGN  &kp TILDE        &kp MINUS      &kp EQUAL      &kp PLUS   &kp AMPERSAND    &kp LEFT_ARROW   &kp N0      &kp N4        &kp N5        &kp N6          &kp MINUS  &kp RETURN
+&none        &kp UNDER        &kp BACKSLASH  &kp PIPE       &kp SLASH  &kp PERCENT      &kp RIGHT_ARROW  &kp DOT     &kp N1        &kp N2        &kp N3          &kp SLASH  &kp ESCAPE
+&none        &none            &none          &none          &none      &none            &mkp LCLK        &none       &none         &none         &none           &none
             >;
 
             display-name = "layer2";
