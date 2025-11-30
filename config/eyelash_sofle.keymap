@@ -102,8 +102,16 @@
         shift_tab: shift_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(TAB)>;
+            bindings = <>;
             label = "SHIFT_TAB";
+        };
+
+        macro_wq: macro_wq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_tap>, <&macro_press>;
+
+            label = "MACRO_WQ";
         };
     };
 
