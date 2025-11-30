@@ -92,6 +92,53 @@
         bindings = <&kp EXCLAMATION>, <&kp QUESTION>;
     };
 
+    t_d_d_par: t_d_d_par {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_D_PAR";
+        #binding-cells = <0>;
+        bindings =
+            <&mt RIGHT_PARENTHESIS LEFT_PARENTHESIS>,
+            <&kp RIGHT_PARENTHESIS>,
+            <&t_d_d_par>;
+    };
+
+    t_d_d_bracket: t_d_d_bracket {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_D_BRACKET";
+        #binding-cells = <0>;
+        bindings =
+            <&mt RIGHT_BRACKET LEFT_BRACKET>,
+            <&kp RIGHT_BRACKET>,
+            <&macro_insert_bracket>;
+    };
+
+    t_d_d_brace: t_d_d_brace {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_D_BRACE";
+        #binding-cells = <0>;
+        bindings =
+            <&mt RIGHT_BRACE LEFT_BRACE>,
+            <&kp RIGHT_BRACE>,
+            <&macro_insert_brace>;
+    };
+
+    t_d_d_angle: t_d_d_angle {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_D_ANGLE";
+        #binding-cells = <0>;
+        bindings =
+            <&mt GREATER_THAN LESS_THAN>,
+            <&kp GREATER_THAN>,
+            <&macro_insert_angle>;
+    };
+
+    t_d_d_wquote: t_d_d_wquote {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_D_WQUOTE";
+        #binding-cells = <0>;
+        bindings = <&mt SQT DOUBLE_QUOTES>, <&kp SQT>, <&macro_insert_wquote>;
+    };
+
     behaviors {
     };
 
