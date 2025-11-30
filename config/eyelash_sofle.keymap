@@ -99,6 +99,15 @@
         };
     };
 
+    macros {
+        shift_tab: shift_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(TAB)>;
+            label = "SHIFT_TAB";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
