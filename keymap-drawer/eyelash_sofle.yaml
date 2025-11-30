@@ -330,8 +330,10 @@ combos:
   k: '&soft_off'
 - p: [32, 37]
   k: '&mmv MOVE_X(-200)'
+  l: [layer1]
 - p: [45, 37]
   k: '&mmv MOVE_X(200)'
+  l: [layer1]
 - p: [6, 37]
   k: '&mmv MOVE_Y(200)'
 - p: [19, 37]
