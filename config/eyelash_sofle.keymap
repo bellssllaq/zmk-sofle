@@ -160,12 +160,32 @@
             label = "SHIFT_TAB";
         };
 
-        macro_wq: macro_wq {
+        macro_insert_wquote: macro_wq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>, <&macro_tap>, <&macro_press>;
-
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
             label = "MACRO_WQ";
+        };
+
+        macro_insert_bracket: macro_insert_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "MACRO_INSERT_BRACKET";
+        };
+
+        macro_insert_brace: macro_insert_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            label = "MACRO_INSERT_BRACE";
+        };
+
+        macro_insert_par: macro_insert_parent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "MACRO_INSERT_PARENT";
         };
     };
 
