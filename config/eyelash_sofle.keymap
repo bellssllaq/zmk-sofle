@@ -204,6 +204,30 @@
             key-positions = <32 50>;
             layers = <1>;
         };
+
+        combo_par {
+            bindings = <&macro_insert_par>;
+            key-positions = <7 8>;
+            layers = <2>;
+        };
+
+        combo_brace {
+            bindings = <&macro_insert_brace>;
+            key-positions = <8 9>;
+            layers = <2>;
+        };
+
+        combo_bracket {
+            bindings = <&macro_insert_bracket>;
+            key-positions = <9 10>;
+            layers = <2>;
+        };
+
+        combo_angle {
+            bindings = <&macro_insert_angle>;
+            key-positions = <10 11>;
+            layers = <2>;
+        };
     };
 
     macros {
