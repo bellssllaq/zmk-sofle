@@ -139,6 +139,13 @@
         bindings = <&mt SQT DOUBLE_QUOTES>, <&kp SQT>, <&macro_insert_wquote>;
     };
 
+    t_d_d_grave: t_d_d_grave {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_D_GRAVE";
+        #binding-cells = <0>;
+        bindings = <&kp GRAVE>, <&macro_insert_grave>;
+    };
+
     behaviors {
     };
 
