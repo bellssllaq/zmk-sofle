@@ -102,6 +102,46 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        mouse_move_l_200 {
+            bindings = <&mmv MOVE_X(-200)>;
+            key-positions = <32 37>;
+        };
+
+        mouse_move_R_200 {
+            bindings = <&mmv MOVE_X(200)>;
+            key-positions = <45 37>;
+        };
+
+        mouse_move_T_200 {
+            bindings = <&mmv MOVE_Y(200)>;
+            key-positions = <6 37>;
+        };
+
+        mouse_move_D_200 {
+            bindings = <&mmv MOVE_Y(-200)>;
+            key-positions = <19 37>;
+        };
+
+        mouse_move_D_100 {
+            bindings = <&mmv MOVE_Y(-100)>;
+            key-positions = <19 50>;
+        };
+
+        mouse_move_T_100 {
+            bindings = <&mmv MOVE_Y(100)>;
+            key-positions = <6 50>;
+        };
+
+        mouse_move_R_100 {
+            bindings = <&mmv MOVE_X(100)>;
+            key-positions = <45 50>;
+        };
+
+        mouse_move_L_100 {
+            bindings = <&mmv MOVE_X(-100)>;
+            key-positions = <32 50>;
+        };
     };
 
     macros {
