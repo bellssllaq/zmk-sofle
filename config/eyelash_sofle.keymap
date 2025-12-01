@@ -243,6 +243,16 @@
             key-positions = <10 11>;
             layers = <2>;
         };
+
+        combo_ctrl_alt {
+            bindings = <&kp LC(RIGHT_ALT)>;
+            key-positions = <56 57>;
+        };
+
+        combo_ctrl_alt_R {
+            bindings = <&kp RC(RIGHT_ALT)>;
+            key-positions = <59 60>;
+        };
     };
 
     macros {
