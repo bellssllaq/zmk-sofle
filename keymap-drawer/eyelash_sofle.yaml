@@ -144,7 +144,7 @@ layers:
   - '&t_d_d_bracket'
   - '*'
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, s: ':'}
   - '!'
   - '?'
   - '*'
@@ -157,27 +157,27 @@ layers:
   - {t: '9', s: (}
   - +
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '@'
+  - ':'
   - '~'
   - {t: '-', s: _}
   - {t: '=', s: +}
   - +
   - '&'
   - $$mdi:arrow-left-bold$$
-  - {t: '0', s: )}
+  - .
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - RETURN
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '@'
   - _
   - {t: \, s: '|'}
   - '|'
   - {t: /, s: '?'}
   - '%'
   - $$mdi:arrow-right-bold$$
-  - {t: ., s: '>'}
+  - '0'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
