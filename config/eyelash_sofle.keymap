@@ -147,6 +147,20 @@
         bindings = <&kp GRAVE>, <&macro_insert_grave>;
     };
 
+    t_d_minus_less: t_d_minus_less {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_MINUS_LESS";
+        #binding-cells = <0>;
+        bindings = <&kp MINUS>, <&kp LESS_THAN>;
+    };
+
+    t_d_plus_more: t_d_plus_more {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_PLUS_MORE";
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp GREATER_THAN>;
+    };
+
     behaviors {
     };
 
