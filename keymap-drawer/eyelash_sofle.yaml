@@ -56,15 +56,15 @@ layers:
   - $$mdi:volume-off$$
   - LEFT WIN
   - '&t_d_h_alt_shiftL'
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&t_d_h_enter'
   - '&t_d_h_layerL'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&t_d_h_layerR'
   - '&t_d_h_space'
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&t_d_h_alt_shiftR'
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - RIGHT GUI
   layer1:
   - F1
   - F2
