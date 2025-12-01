@@ -364,3 +364,7 @@ combos:
 - p: [10, 11]
   k: '&macro_insert_angle'
   l: [layer2]
+- p: [56, 57]
+  k: Ctl+$$mdi:apple-keyboard-option$$
+- p: [59, 60]
+  k: Ctl+$$mdi:apple-keyboard-option$$
