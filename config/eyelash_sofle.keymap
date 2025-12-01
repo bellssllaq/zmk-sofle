@@ -48,14 +48,14 @@
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_ENTER";
         #binding-cells = <0>;
-        bindings = <&kp RETURN>, <&mt LC(LCTRL) BACKSPACE>;
+        bindings = <&mt LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
     };
 
     t_d_h_space: t_d_h_space {
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_SPACE";
         #binding-cells = <0>;
-        bindings = <&kp SPACE>, <&mt RCTRL BACKSPACE>;
+        bindings = <&mt BACKSPACE SPACE>, <&mt RCTRL BACKSPACE>;
     };
 
     t_d_h_layerL: t_d_h_layerL {
