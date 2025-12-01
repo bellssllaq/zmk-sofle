@@ -159,9 +159,9 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - ':'
   - '~'
-  - {t: '-', s: _}
+  - '&t_d_minus_less'
   - {t: '=', s: +}
-  - +
+  - '&t_d_plus_more'
   - '&'
   - $$mdi:arrow-left-bold$$
   - .
