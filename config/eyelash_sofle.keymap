@@ -49,13 +49,17 @@
         label = "T_D_H_ENTER";
         #binding-cells = <0>;
         bindings = <&mt LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
+
+        tapping-term-ms = <100>;
     };
 
     t_d_h_space: t_d_h_space {
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_SPACE";
         #binding-cells = <0>;
-        bindings = <&mt BACKSPACE SPACE>, <&mt RCTRL BACKSPACE>;
+        bindings = <&mt RIGHT_CONTROL SPACE>, <&mt RCTRL BACKSPACE>;
+
+        tapping-term-ms = <100>;
     };
 
     t_d_h_layerL: t_d_h_layerL {
@@ -63,6 +67,8 @@
         label = "T_D_H_LAYERL";
         #binding-cells = <0>;
         bindings = <&lt 1 LANGUAGE_2>, <&mt LCTRL SPACE>;
+
+        tapping-term-ms = <100>;
     };
 
     t_d_h_layerR: t_d_h_layerR {
@@ -70,6 +76,8 @@
         label = "T_D_H_LAYERR";
         #binding-cells = <0>;
         bindings = <&lt 2 LANGUAGE_1>, <&mt RCTRL ENTER>;
+
+        tapping-term-ms = <100>;
     };
 
     t_d_h_alt_shiftL: t_d_h_alt_shiftL {
