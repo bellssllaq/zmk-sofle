@@ -51,7 +51,7 @@
         #binding-cells = <0>;
         bindings = <&mt LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <150>;
     };
 
     t_d_h_space: t_d_h_space {
@@ -60,7 +60,7 @@
         #binding-cells = <0>;
         bindings = <&mt RIGHT_CONTROL SPACE>, <&mt RCTRL BACKSPACE>;
 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <150>;
     };
 
     t_d_h_layerL: t_d_h_layerL {
