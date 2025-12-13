@@ -368,3 +368,7 @@ combos:
   k: Ctl+$$mdi:apple-keyboard-option$$
 - p: [59, 60]
   k: Ctl+$$mdi:apple-keyboard-option$$
+- p: [56, 44]
+  k: LEFT WIN
+- p: [46, 60]
+  k: RIGHT WIN
