@@ -51,7 +51,7 @@
         #binding-cells = <0>;
         bindings = <&mt LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
 
-        tapping-term-ms = <150>;
+        tapping-term-ms = <200>;
     };
 
     t_d_h_space: t_d_h_space {
@@ -60,7 +60,7 @@
         #binding-cells = <0>;
         bindings = <&mt RIGHT_CONTROL SPACE>, <&mt RCTRL BACKSPACE>;
 
-        tapping-term-ms = <150>;
+        tapping-term-ms = <200>;
     };
 
     t_d_h_layerL: t_d_h_layerL {
@@ -261,6 +261,16 @@
         combo_ctrl_alt_R {
             bindings = <&kp RC(RIGHT_ALT)>;
             key-positions = <59 60>;
+        };
+
+        combo_ctrl_b_win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <56 44>;
+        };
+
+        combo_ctrl_n_win {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <46 60>;
         };
     };
 
