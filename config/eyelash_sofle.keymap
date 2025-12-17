@@ -51,7 +51,7 @@
         #binding-cells = <0>;
         bindings = <&mt LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
 
-        tapping-term-ms = <200>;
+        tapping-term-ms = <180>;
     };
 
     t_d_h_space: t_d_h_space {
@@ -60,25 +60,25 @@
         #binding-cells = <0>;
         bindings = <&mt RIGHT_CONTROL SPACE>, <&mt RCTRL BACKSPACE>;
 
-        tapping-term-ms = <200>;
+        tapping-term-ms = <180>;
     };
 
     t_d_h_layerL: t_d_h_layerL {
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_LAYERL";
         #binding-cells = <0>;
-        bindings = <&lt 1 LANGUAGE_2>, <&mt LCTRL SPACE>;
+        bindings = <&lt 1 LANGUAGE_2>, <&tog 1>;
 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <180>;
     };
 
     t_d_h_layerR: t_d_h_layerR {
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_LAYERR";
         #binding-cells = <0>;
-        bindings = <&lt 2 LANGUAGE_1>, <&mt RCTRL ENTER>;
+        bindings = <&lt 2 LANGUAGE_1>, <&tog 2>;
 
-        tapping-term-ms = <100>;
+        tapping-term-ms = <180>;
     };
 
     t_d_h_alt_shiftL: t_d_h_alt_shiftL {
@@ -278,43 +278,50 @@
         macro_insert_wquote: macro_wq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
             label = "MACRO_WQ";
         };
 
         macro_insert_bracket: macro_insert_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
             label = "MACRO_INSERT_BRACKET";
         };
 
         macro_insert_brace: macro_insert_brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
             label = "MACRO_INSERT_BRACE";
         };
 
         macro_insert_par: macro_insert_parent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "MACRO_INSERT_PARENT";
         };
 
         macro_insert_angle: macro_insert_angle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
             label = "MACRO_INSERT_ANGLE";
         };
 
         macro_insert_grave: macro_insert_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp GRAVE &kp GRAVE &kp LEFT_ARROW>;
             label = "MACRO_INSERT_GRAVE";
+        };
+
+        macro_insert_brancket_wo_lang: macro_insert_brancket_wo_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "MACRO_INSERT_BRANCKET_WO_LANG";
         };
     };
 
