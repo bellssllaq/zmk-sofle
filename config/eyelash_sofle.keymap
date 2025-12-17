@@ -175,11 +175,6 @@
     combos {
         compatible = "zmk,combos";
 
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
-        };
-
         mouse_move_l_200 {
             bindings = <&mmv MOVE_X(-200)>;
             key-positions = <32 37>;
