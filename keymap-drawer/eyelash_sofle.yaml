@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&t_d_d_bracket'
+  - '&t_d_d_brancket_wo_lang'
   - A
   - S
   - D
