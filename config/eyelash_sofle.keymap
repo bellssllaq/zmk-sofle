@@ -69,7 +69,7 @@
         #binding-cells = <0>;
         bindings = <&lt 1 LANGUAGE_2>, <&tog 1>;
 
-        tapping-term-ms = <180>;
+        tapping-term-ms = <240>;
     };
 
     t_d_h_layerR: t_d_h_layerR {
@@ -78,7 +78,7 @@
         #binding-cells = <0>;
         bindings = <&lt 2 LANGUAGE_1>, <&tog 2>;
 
-        tapping-term-ms = <180>;
+        tapping-term-ms = <240>;
     };
 
     t_d_h_alt_shiftL: t_d_h_alt_shiftL {
