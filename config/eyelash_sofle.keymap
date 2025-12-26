@@ -354,7 +354,7 @@
 &kp SEMI   &kp EXCLAMATION  &kp QUESTION     &kp STAR       &kp CARET       &kp DOLLAR       &kp DOWN_ARROW   &kp COMMA     &kp N7        &kp N8        &kp N9          &kp PLUS   &kp BACKSPACE
 &kp COLON  &kp TILDE        &t_d_minus_less  &kp EQUAL      &t_d_plus_more  &kp AMPERSAND    &kp LEFT_ARROW   &kp PERIOD    &kp N4        &kp N5        &kp N6          &kp MINUS  &kp RETURN
 &kp AT     &kp UNDER        &kp BACKSLASH    &kp PIPE       &kp SLASH       &kp PERCENT      &kp RIGHT_ARROW  &kp NUMBER_0  &kp N1        &kp N2        &kp N3          &kp SLASH  &kp ESCAPE
-&none      &none            &none            &none          &none           &none            &kp ENTER        &none         &none         &none         &none           &none
+&trans     &trans           &trans           &trans         &trans          &trans           &kp ENTER        &trans        &trans        &trans        &trans          &trans
             >;
 
             display-name = "layer2";
