@@ -180,7 +180,8 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <20>;
+        hold-while-undecided;
     };
 
     h_t_layerR: h_t_layerR {
@@ -191,7 +192,8 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <20>;
+        hold-while-undecided;
     };
 
     h_t_enter: h_t_enter {
@@ -202,7 +204,8 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <20>;
+        hold-while-undecided;
     };
 
     h_t_space: h_t_space {
@@ -213,7 +216,8 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <20>;
+        hold-while-undecided;
     };
 
     behaviors {
