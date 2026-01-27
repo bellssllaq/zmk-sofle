@@ -49,7 +49,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_ENTER";
         #binding-cells = <0>;
-        bindings = <&mt LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
+        bindings = <&h_t_enter LEFT_CONTROL RETURN>, <&kp BACKSPACE>;
 
         tapping-term-ms = <180>;
     };
@@ -58,7 +58,10 @@
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_SPACE";
         #binding-cells = <0>;
-        bindings = <&mt RIGHT_CONTROL SPACE>, <&mt RCTRL BACKSPACE>;
+        bindings =
+            <&h_t_space RIGHT_CONTROL SPACE>,
+            <&mt RCTRL BACKSPACE>,
+            <&none>;
 
         tapping-term-ms = <180>;
     };
@@ -67,18 +70,18 @@
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_LAYERL";
         #binding-cells = <0>;
-        bindings = <&lt 1 LANGUAGE_2>, <&tog 1>;
+        bindings = <&h_t_layerL 1 LANGUAGE_2>, <&tog 1>;
 
-        tapping-term-ms = <160>;
+        tapping-term-ms = <200>;
     };
 
     t_d_h_layerR: t_d_h_layerR {
         compatible = "zmk,behavior-tap-dance";
         label = "T_D_H_LAYERR";
         #binding-cells = <0>;
-        bindings = <&lt 2 LANGUAGE_1>, <&tog 2>;
+        bindings = <&h_t_layerR 2 LANGUAGE_1>, <&tog 2>;
 
-        tapping-term-ms = <160>;
+        tapping-term-ms = <200>;
     };
 
     t_d_h_alt_shiftL: t_d_h_alt_shiftL {
@@ -167,6 +170,50 @@
         bindings =
             <&mt RIGHT_BRACKET LEFT_BRACKET>,
             <&macro_insert_brancket_wo_lang>;
+    };
+
+    h_t_layerL: h_t_layerL {
+        compatible = "zmk,behavior-hold-tap";
+        label = "H_T_LAYERL";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <100>;
+    };
+
+    h_t_layerR: h_t_layerR {
+        compatible = "zmk,behavior-hold-tap";
+        label = "H_T_LAYERR";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <100>;
+    };
+
+    h_t_enter: h_t_enter {
+        compatible = "zmk,behavior-hold-tap";
+        label = "H_T_ENTER";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <100>;
+    };
+
+    h_t_space: h_t_space {
+        compatible = "zmk,behavior-hold-tap";
+        label = "H_T_SPACE";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <100>;
     };
 
     behaviors {
