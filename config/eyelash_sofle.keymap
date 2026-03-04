@@ -229,6 +229,33 @@
         bindings = <&mt COLON SEMI>, <&kp COLON>;
     };
 
+    scroll_vmvolume: scroll_vmvolume {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&kp LS(LA(LC(J)))>, <&kp LS(LA(LC(K)))>;
+
+        tap-ms = <50>;
+        label = "SCROLL_VMVOLUME";
+    };
+
+    t_d_h_comma: t_d_h_comma {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_COMMA";
+        #binding-cells = <0>;
+        bindings = <&mt SEMI COMMA>, <&kp SEMI>;
+
+        tapping-term-ms = <180>;
+    };
+
+    t_d_h_period: t_d_h_period {
+        compatible = "zmk,behavior-tap-dance";
+        label = "T_D_H_PERIOD";
+        #binding-cells = <0>;
+        bindings = <&mt COLON PERIOD>, <&kp COLON>;
+
+        tapping-term-ms = <180>;
+    };
+
     behaviors {
     };
 
@@ -326,6 +353,11 @@
             bindings = <&kp RIGHT_WIN>;
             key-positions = <46 60>;
         };
+
+        layer3 {
+            bindings = <&mo 3>;
+            key-positions = <57 44>;
+        };
     };
 
     macros {
@@ -377,6 +409,13 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
             label = "MACRO_INSERT_BRANCKET_WO_LANG";
         };
+
+        scroll_vmmute: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(M)))>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -386,12 +425,12 @@
             bindings = <
 &kp ESCAPE               &kp N1        &kp N2             &kp N3              &kp N4        &kp N5           &kp UP_ARROW     &kp N6         &kp N7        &kp N8               &kp N9             &kp N0         &kp DELETE
 &t_d_d_wquote            &kp Q         &kp W              &kp E               &kp R         &kp T            &kp DOWN_ARROW   &kp Y          &kp U         &kp I                &kp O              &kp P          &kp BACKSPACE
-&t_d_d_brancket_wo_lang  &kp A         &kp S              &kp D               &kp F         &kp G            &kp LEFT_ARROW   &kp H          &kp J         &kp K                &kp L              &kp MINUS      &kp SEMI
-&kp LEFT_SHIFT           &kp Z         &kp X              &kp C               &kp V         &kp B            &kp RIGHT_ARROW  &kp N          &kp M         &kp COMMA            &kp DOT            &kp TILDE      &kp SLASH
-&kp C_MUTE               &kp LEFT_WIN  &t_d_h_alt_shiftL  &mt LEFT_SHIFT TAB  &t_d_h_enter  &t_d_h_layerL    &kp ENTER        &t_d_h_layerR  &t_d_h_space  &mt RIGHT_SHIFT TAB  &t_d_h_alt_shiftR  &kp RIGHT_GUI
+&t_d_d_brancket_wo_lang  &kp A         &kp S              &kp D               &kp F         &kp G            &kp LEFT_ARROW   &kp H          &kp J         &kp K                &kp L              &kp MINUS      &kp ENTER
+&kp LEFT_SHIFT           &kp Z         &kp X              &kp C               &kp V         &kp B            &kp RIGHT_ARROW  &kp N          &kp M         &t_d_h_comma         &t_d_h_period      &kp TILDE      &kp SLASH
+&kp LS(LA(LC(M)))        &kp LEFT_WIN  &t_d_h_alt_shiftL  &mt LEFT_SHIFT TAB  &t_d_h_enter  &t_d_h_layerL    &kp ENTER        &t_d_h_layerR  &t_d_h_space  &mt RIGHT_SHIFT TAB  &t_d_h_alt_shiftR  &kp RIGHT_GUI
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_vmvolume>;
             display-name = "LAYER0";
         };
 
@@ -405,7 +444,7 @@
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&scroll_encoder_hor>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_2 {
@@ -431,7 +470,7 @@
             >;
 
             display-name = "layer3";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder_hor>;
         };
 
         layer_4 {
