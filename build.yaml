@@ -5,5 +5,5 @@ include:
   - board: eyelash_sofle_right
     shield: nice_view
     artifact-name: eyelash_sofle_right
-  - board: nice_nano@v2
+  - board: nice_nano@2.0.0  # ← ここを 2.0.0 に変更
     shield: settings_reset
