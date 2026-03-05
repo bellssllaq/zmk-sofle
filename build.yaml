@@ -2,13 +2,11 @@ include:
   - board: eyelash_sofle_left
     shield: nice_view
     artifact-name: eyelash_sofle_left
-    # ↓ これを追記して、ZMKに最新仕様であることを伝えます
-    zmk_board_variant: v2 
+    snippet: zmk-board-variant
   - board: eyelash_sofle_right
     shield: nice_view
     artifact-name: eyelash_sofle_right
-    # ↓ これを追記
-    zmk_board_variant: v2
+    snippet: zmk-board-variant
   - board: nice_nano
     shield: settings_reset
-    zmk_board_variant: v2
+    snippet: zmk-board-variant
