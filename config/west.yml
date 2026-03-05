@@ -8,7 +8,7 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3-branch
+      revision: main  # ← mainに戻す
       import: app/west.yml
   self:
     path: boards
