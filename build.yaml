@@ -1,13 +1,11 @@
+
 include:
   - board: eyelash_sofle_left
     shield: nice_view
     artifact-name: eyelash_sofle_left
-    snippet: zmk-board-variant
   - board: eyelash_sofle_right
     shield: nice_view
     artifact-name: eyelash_sofle_right
-    snippet: zmk-board-variant
   - board: nice_nano@2.0.0
     shield: settings_reset
     artifact-name: settings_reset
-    snippet: zmk-board-variant
